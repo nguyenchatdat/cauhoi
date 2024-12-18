@@ -1,0 +1,74 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #ffd1dc, #ffe4e1);
+    font-family: 'Arial', 'Helvetica', sans-serif;
+    text-align: center;
+}
+
+.container {
+    color: #ff69b4;
+    padding: 20px;
+}
+
+.container h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.container img {
+    width: 200px;
+    height: auto;
+    animation: wave 1.5s ease-in-out infinite;
+}
+
+@keyframes wave {
+    0%, 100% {
+        transform: rotate(0deg);
+        transform-origin: bottom center;
+    }
+    50% {
+        transform: rotate(10deg);
+        transform-origin: bottom center;
+    }
+}
+
+.container p {
+    font-size: 1.2rem;
+    margin: 20px 0;
+}
+
+.container a {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: white;
+    background-color: #ff69b4;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease-in-out, transform 0.2s;
+}
+
+.container a:hover {
+    background-color: #ff1493;
+    transform: scale(1.05);
+}
+.pink-button {
+    background-color: pink; /* Màu nền hồng */
+    color: white; /* Màu chữ */
+    font-size: 25px; /* Kích thước chữ */
+    padding: 10px 20px; /* Khoảng cách bên trong nút */
+    border: none; /* Xóa đường viền */
+    border-radius: 10px; /* Làm tròn góc nút */
+    cursor: pointer; /* Con trỏ dạng tay khi hover */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* Đổ bóng nhẹ */
+}
+.pink-button:hover {
+    background-color: #ff69b4; /* Màu hồng đậm hơn */
+    transition: background-color 0.3s ease; /* Hiệu ứng chuyển đổi màu mượt */
+}
